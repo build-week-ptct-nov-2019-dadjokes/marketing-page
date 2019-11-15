@@ -1,0 +1,347 @@
+// RESET Code //
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// Cusstom code //
+@import url('https://fonts.googleapis.com/css?family=Magra|Yeon+Sung&display=swap');
+
+.header-font {
+    font-family: 'Yeon Sung', cursive;
+}
+
+.p-font {
+    font-family: 'Magra', sans-serif;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: darkgray;
+    max-width: 1000px;
+    margin: 0 auto;
+    .p-font();
+
+    .header-img {
+        display: flex;
+        height: 300px;
+        width: 100%;
+        border: 2px solid orange;
+    }
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        // align-items: center;
+        background: white;
+        border: 1px solid blue;
+        width: 100%;
+        align-content: stretch;
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid green;
+            align-items: stretch;
+            padding: 5px;
+            margin: 5px;
+
+            .nav-item {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+                color: orange;
+                border: 1px solid black;
+                align-content: space-between;
+                padding: 5px;
+                margin: 5px;
+            }
+        }
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid cyan;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        background: orange;
+
+        img {
+            width: 100%;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            border: 1px solid purple;
+            font-size: 40px;
+            padding: 5px;
+            margin: 5px;
+            .header-font();
+        }
+
+        p {
+            border: 1px solid red;
+            font-size: 1.2em;
+            padding: 5px;
+            margin: 5px;
+        }
+    }
+    .team {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid orange;
+        padding: 5px;
+        margin: 5px;
+        
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            .header-font();
+        }
+
+        .members {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid yellow;
+
+            .ui-developers {
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                margin: 5px;
+                border: 1px solid black;
+
+                h3 {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 5px;
+                    margin: 5px;
+                    font-size: 25px;
+                    .header-font();
+                }
+
+                .person {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid white;
+                    padding: 5px;
+                    margin: 5px;
+                    width: 30%;
+
+                    .person-img {
+                        display: flex;
+                        flex-direction: row;
+                        // height: 100px;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                    }
+
+                    h4 {
+                        flex-direction: row;
+                        text-align: center;
+                        padding: 5px;
+                        margin: 5px;
+                        font-size: 20px;
+                        .header-font();
+                    }
+
+                    p {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 5px;
+                        margin: 5px;
+                        border: 1px solid aqua;
+                    }
+                }
+            }
+            .react-developers {
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                margin: 5px;
+                border: 1px solid black;
+
+                h3 {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 5px;
+                    margin: 5px;
+                    font-size: 25px;
+                    .header-font();
+                }
+
+                .person {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid white;
+                    padding: 5px;
+                    margin: 5px;
+                    width: 25%;
+
+                    .person-img {
+                        display: flex;
+                        flex-direction: row;
+                        // height: 100px;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                    }
+
+                    h4 {
+                        flex-direction: row;
+                        text-align: center;
+                        padding: 5px;
+                        margin: 5px;
+                        font-size: 20px;
+                        .header-font();
+                    }
+
+                    p {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 5px;
+                        margin: 5px;
+                        border: 1px solid aqua;
+                    }
+                }
+            }
+
+            .PL {
+                display: flex;
+                flex-direction: row;
+                padding: 5px;
+                margin: 5px;
+                border: 1px solid black;
+
+                h3 {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 5px;
+                    margin: 5px;
+                    font-size: 25px;
+                    .header-font();
+                }
+
+                .leader {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid white;
+                    padding: 5px;
+                    margin: 5px;
+                    width: 75%;
+
+                    .person-img {
+                        display: flex;
+                        flex-direction: row;
+                        // height: 100px;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        align-items: center;
+                    }
+
+                    h4 {
+                        flex-direction: row;
+                        text-align: center;
+                        padding: 5px;
+                        margin: 5px;
+                        font-size: 20px;
+                        .header-font();
+                    }
+
+                    p {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 5px;
+                        margin: 5px;
+                        border: 1px solid aqua;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        // align-items: center;
+        background: white;
+        border: 1px solid blue;
+        width: 100%;
+        align-content: stretch;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid green;
+            align-items: stretch;
+            padding: 5px;
+            margin: 5px;
+
+            a {
+                display: flex;
+                flex-direction: row;
+                text-decoration: none;
+                color: orange;
+                border: 1px solid black;
+                align-content: space-between;
+                padding: 5px;
+                margin: 5px;
+            }
+        } 
+    }
+}

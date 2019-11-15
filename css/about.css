@@ -1,0 +1,401 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Magra';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Magra'), url(https://fonts.gstatic.com/s/magra/v8/uK_94ruaZus72n52Kjc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Yeon Sung';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Yeon Sung Regular'), local('YeonSung-Regular'), url(https://fonts.gstatic.com/s/yeonsung/v8/QldMNTpbohAGtsJvUn6BTlle.ttf) format('truetype');
+}
+.header-font {
+  font-family: 'Yeon Sung', cursive;
+}
+.p-font {
+  font-family: 'Magra', sans-serif;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: darkgray;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Magra', sans-serif;
+}
+.container .header-img {
+  display: flex;
+  height: 300px;
+  width: 100%;
+  border: 2px solid orange;
+}
+.container .nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: white;
+  border: 1px solid blue;
+  width: 100%;
+  align-content: stretch;
+}
+.container .nav-container .nav-bar {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  align-items: stretch;
+  padding: 5px;
+  margin: 5px;
+}
+.container .nav-container .nav-bar .nav-item {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: orange;
+  border: 1px solid black;
+  align-content: space-between;
+  padding: 5px;
+  margin: 5px;
+}
+.container .about {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  background: orange;
+}
+.container .about img {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.container .about h2 {
+  border: 1px solid purple;
+  font-size: 40px;
+  padding: 5px;
+  margin: 5px;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .about p {
+  border: 1px solid red;
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 5px;
+}
+.container .team {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid orange;
+  padding: 5px;
+  margin: 5px;
+}
+.container .team h2 {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .team .members {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid yellow;
+}
+.container .team .members .ui-developers {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+.container .team .members .ui-developers h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .team .members .ui-developers .person {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;
+  width: 30%;
+}
+.container .team .members .ui-developers .person .person-img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.container .team .members .ui-developers .person h4 {
+  flex-direction: row;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .team .members .ui-developers .person p {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid aqua;
+}
+.container .team .members .react-developers {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+.container .team .members .react-developers h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .team .members .react-developers .person {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;
+  width: 25%;
+}
+.container .team .members .react-developers .person .person-img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.container .team .members .react-developers .person h4 {
+  flex-direction: row;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .team .members .react-developers .person p {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid aqua;
+}
+.container .team .members .PL {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+}
+.container .team .members .PL h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .team .members .PL .leader {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;
+  width: 75%;
+}
+.container .team .members .PL .leader .person-img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.container .team .members .PL .leader h4 {
+  flex-direction: row;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-family: 'Yeon Sung', cursive;
+}
+.container .team .members .PL .leader p {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid aqua;
+}
+.container footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: white;
+  border: 1px solid blue;
+  width: 100%;
+  align-content: stretch;
+}
+.container footer nav {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  align-items: stretch;
+  padding: 5px;
+  margin: 5px;
+}
+.container footer nav a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: orange;
+  border: 1px solid black;
+  align-content: space-between;
+  padding: 5px;
+  margin: 5px;
+}

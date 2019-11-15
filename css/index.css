@@ -253,6 +253,11 @@ p {
 .home {
   margin-top: 15%;
 }
+@media (max-width: 500px) {
+  .home {
+    margin-top: 40%;
+  }
+}
 .home .header_img img {
   width: 100%;
   height: 100%;
@@ -354,6 +359,15 @@ p {
 }
 .home .joke-content .joke h3 {
   margin: 2%;
+}
+.home .joke-content .joke #line1 {
+  display: none;
+}
+.home .joke-content .joke #line2 {
+  display: none;
+}
+.home .joke-content .joke #line3 {
+  display: none;
 }
 @media (max-width: 500px) {
   .home .joke-content .joke {

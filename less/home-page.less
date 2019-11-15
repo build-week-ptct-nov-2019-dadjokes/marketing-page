@@ -1,0 +1,152 @@
+.home{
+    margin-top: 15%;
+
+    @media @mobile{
+        margin-top: 40%;
+    }
+
+    .header_img{
+    
+        img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 2%;
+            border-radius: 10px;
+        }
+    }
+
+    .intro_content{
+        padding-bottom: 2%;
+        border-bottom: 2px dotted black;
+    }
+
+
+    .content-section {
+        margin: 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media @mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        }
+
+        
+        .text-content {
+        width: 48%;
+        padding-right: 1%;
+
+        h2{
+            margin:2%;
+        }
+
+        @media @mobile{
+            width: 90%;
+        }
+        }
+
+        .img-content {
+        width: 48%;
+        padding-left: 1%;
+
+        @media @mobile{
+            width: 90%;
+        }
+
+            img {
+                border-radius: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+    .inverse-content {
+        padding-bottom: 30px;
+        border-bottom: 2px dotted black;
+
+        @media @mobile{
+        width: 100%;
+        border-top: 2px dotted black;
+        border-bottom: 2px dotted black;
+        padding-top:30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        }
+
+        .text-content {
+        padding-left: 1%;
+        padding-right: 0;
+
+        @media @mobile{
+            width: 90%;
+        }
+
+        }
+
+            .img-content {
+            padding-right: 1%;
+            padding-left: 0;
+
+            @media @mobile{
+                width: 90%;
+
+            }
+        }
+
+    }
+
+    .joke-content {
+        padding-top: 30px;
+        //border-top: 2px dashed black;
+        display: flex;
+        justify-content: space-between;
+
+
+        @media @mobile {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        //border-top: 2px dashed black;
+        }
+
+        .joke {
+        width: 30%;
+        margin-bottom: 20px;
+        
+        h3{
+            margin: 2%;
+        }
+
+        #line1{
+            display:none;
+        }
+
+        #line2{
+            display:none;
+        }
+
+        #line3{
+            display:none;
+        }
+        
+
+        @media @mobile{
+            width: 75%;
+        }
+
+        .btn{
+            .custom-btn(black, white);
+            margin-top: 5%;
+            
+            
+            }
+        }
+
+    }
+
+}//home

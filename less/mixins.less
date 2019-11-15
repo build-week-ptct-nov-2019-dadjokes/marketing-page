@@ -1,0 +1,36 @@
+//MIXINS
+
+.display-flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
+.width{
+    width: 100%;
+}
+
+
+.custom-btn(@bg-color, @color){
+    //margin: 10px 20px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: @teal;
+    color: white;
+    border:black;
+
+    &:hover {
+    opacity: 0.5;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+}

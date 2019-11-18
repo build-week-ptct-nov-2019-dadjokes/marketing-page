@@ -151,48 +151,77 @@ table {
   margin: 0 auto;
   font-family: 'Magra', sans-serif;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 99%;
+    margin: 0 auto;
+    display: flex;
+    background: darkgray;
+  }
+}
 .container .header-img {
   display: flex;
   height: 300px;
   width: 100%;
   border: 2px solid orange;
 }
+@media (max-width: 500px) {
+  .container .header-img {
+    width: 99%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .container .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background: white;
-  border: 1px solid blue;
   width: 100%;
-  align-content: stretch;
+}
+@media (max-width: 500px) {
+  .container .nav-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .container .nav-container .nav-bar {
   display: flex;
-  flex-direction: row;
-  border: 1px solid green;
-  align-items: stretch;
-  padding: 5px;
-  margin: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 35%;
+  padding-bottom: 1%;
 }
 .container .nav-container .nav-bar .nav-item {
-  display: flex;
-  flex-direction: row;
   text-decoration: none;
-  color: orange;
+  color: #e28409;
+  font-size: 1.6rem;
   border: 1px solid black;
-  align-content: space-between;
-  padding: 5px;
-  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 10px #e28409;
+  padding: 1%;
+  margin: 3%;
 }
 .container .about {
   display: flex;
   flex-direction: column;
-  border: 1px solid cyan;
+  border: 1px solid;
   border-radius: 10px;
   padding: 5px;
   margin: 5px;
   text-align: center;
   background: orange;
+}
+@media (max-width: 500px) {
+  .container .about {
+    width: 96%;
+    display: flex;
+  }
 }
 .container .about img {
   width: 100%;
@@ -201,15 +230,19 @@ table {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container .about img {
+    width: 99%;
+    display: flex;
+  }
+}
 .container .about h2 {
-  border: 1px solid purple;
   font-size: 40px;
   padding: 5px;
   margin: 5px;
   font-family: 'Yeon Sung', cursive;
 }
 .container .about p {
-  border: 1px solid red;
   font-size: 1.2em;
   padding: 5px;
   margin: 5px;
@@ -217,9 +250,15 @@ table {
 .container .team {
   display: flex;
   flex-direction: column;
-  border: 1px solid orange;
   padding: 5px;
   margin: 5px;
+}
+@media (max-width: 500px) {
+  .container .team {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .team h2 {
   font-size: 30px;
@@ -229,14 +268,27 @@ table {
 .container .team .members {
   display: flex;
   flex-direction: column;
-  border: 1px solid yellow;
+}
+@media (max-width: 500px) {
+  .container .team .members {
+    width: 99%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .container .team .members .ui-developers {
   display: flex;
   flex-direction: row;
   padding: 5px;
   margin: 5px;
-  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .team .members .ui-developers {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .team .members .ui-developers h3 {
   display: flex;
@@ -250,10 +302,19 @@ table {
 .container .team .members .ui-developers .person {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 1px solid black;
+  border-radius: 20px;
   padding: 5px;
   margin: 5px;
   width: 30%;
+}
+@media (max-width: 500px) {
+  .container .team .members .ui-developers .person {
+    width: 97%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
 }
 .container .team .members .ui-developers .person .person-img {
   display: flex;
@@ -262,6 +323,12 @@ table {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .container .team .members .ui-developers .person .person-img {
+    width: 98%;
+    margin-left: 5px;
+  }
 }
 .container .team .members .ui-developers .person h4 {
   flex-direction: row;
@@ -276,14 +343,19 @@ table {
   flex-direction: row;
   padding: 5px;
   margin: 5px;
-  border: 1px solid aqua;
 }
 .container .team .members .react-developers {
   display: flex;
   flex-direction: row;
   padding: 5px;
   margin: 5px;
-  border: 1px solid black;
+}
+@media (max-width: 500px) {
+  .container .team .members .react-developers {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .team .members .react-developers h3 {
   display: flex;
@@ -297,10 +369,19 @@ table {
 .container .team .members .react-developers .person {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  border: 1px solid black;
+  border-radius: 20px;
   padding: 5px;
   margin: 5px;
   width: 25%;
+}
+@media (max-width: 500px) {
+  .container .team .members .react-developers .person {
+    width: 97%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 .container .team .members .react-developers .person .person-img {
   display: flex;
@@ -309,6 +390,12 @@ table {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .container .team .members .react-developers .person .person-img {
+    width: 98%;
+    margin-left: 5px;
+  }
 }
 .container .team .members .react-developers .person h4 {
   flex-direction: row;
@@ -323,7 +410,6 @@ table {
   flex-direction: row;
   padding: 5px;
   margin: 5px;
-  border: 1px solid aqua;
 }
 .container .team .members .PL {
   display: flex;
@@ -331,6 +417,14 @@ table {
   padding: 5px;
   margin: 5px;
   border: 1px solid black;
+  border-radius: 20px;
+}
+@media (max-width: 500px) {
+  .container .team .members .PL {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .container .team .members .PL h3 {
   display: flex;
@@ -341,13 +435,23 @@ table {
   font-size: 25px;
   font-family: 'Yeon Sung', cursive;
 }
+@media (max-width: 500px) {
+  .container .team .members .PL h3 {
+    width: 50%;
+    margin-left: 110px;
+  }
+}
 .container .team .members .PL .leader {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
   padding: 5px;
   margin: 5px;
   width: 75%;
+}
+@media (max-width: 500px) {
+  .container .team .members .PL .leader {
+    width: 98%;
+  }
 }
 .container .team .members .PL .leader .person-img {
   display: flex;
@@ -356,6 +460,11 @@ table {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .container .team .members .PL .leader .person-img {
+    width: 98%;
+  }
 }
 .container .team .members .PL .leader h4 {
   flex-direction: row;
@@ -370,32 +479,34 @@ table {
   flex-direction: row;
   padding: 5px;
   margin: 5px;
-  border: 1px solid aqua;
 }
 .container footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: white;
-  border: 1px solid blue;
   width: 100%;
   align-content: stretch;
 }
+@media (max-width: 500px) {
+  .container footer {
+    width: 100%;
+  }
+}
 .container footer nav {
   display: flex;
-  flex-direction: row;
-  border: 1px solid green;
-  align-items: stretch;
-  padding: 5px;
-  margin: 5px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 35%;
+  padding-bottom: 1%;
 }
 .container footer nav a {
-  display: flex;
-  flex-direction: row;
   text-decoration: none;
-  color: orange;
+  color: #e28409;
+  font-size: 1.6rem;
   border: 1px solid black;
-  align-content: space-between;
-  padding: 5px;
-  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 10px #e28409;
+  padding: 1%;
+  margin: 3%;
 }

@@ -46,6 +46,8 @@ table {
 // Cusstom code //
 @import url('https://fonts.googleapis.com/css?family=Magra|Yeon+Sung&display=swap');
 
+@mobile: ~"(max-width: 500px)";
+
 .header-font {
     font-family: 'Yeon Sung', cursive;
 }
@@ -53,6 +55,13 @@ table {
 .p-font {
     font-family: 'Magra', sans-serif;
 }
+
+.display-flex(@justify, @align){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
 
 .container {
     height: 100%;
@@ -63,52 +72,74 @@ table {
     margin: 0 auto;
     .p-font();
 
+    @media @mobile {
+        width: 99%;
+        margin: 0 auto;
+        display: flex;
+        background: darkgray;
+    }
+
     .header-img {
         display: flex;
         height: 300px;
         width: 100%;
         border: 2px solid orange;
+
+        @media @mobile {
+            width: 99%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
     }
 
     .nav-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        // align-items: center;
+        align-items: center;
         background: white;
-        border: 1px solid blue;
         width: 100%;
-        align-content: stretch;
+
+        @media @mobile {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+        }
 
         .nav-bar {
-            display: flex;
-            flex-direction: row;
-            border: 1px solid green;
-            align-items: stretch;
-            padding: 5px;
-            margin: 5px;
+            .display-flex(space-evenly, center);
+            margin: 0 35%;
+            padding-bottom: 1%;
 
             .nav-item {
-                display: flex;
-                flex-direction: row;
                 text-decoration: none;
-                color: orange;
+                color: rgb(226, 132, 9);
+                font-size: 1.6rem;
                 border: 1px solid black;
-                align-content: space-between;
-                padding: 5px;
-                margin: 5px;
+                border-radius: 10px;
+                box-shadow: 5px 10px rgb(226, 132, 9);
+                padding: 1%;
+                margin: 3%;
             }
         }
     }
     .about {
         display: flex;
         flex-direction: column;
-        border: 1px solid cyan;
+        border: 1px solid;
         border-radius: 10px;
         padding: 5px;
         margin: 5px;
         text-align: center;
         background: orange;
+
+        @media @mobile {
+            width: 96%;
+            display: flex;
+        }
 
         img {
             width: 100%;
@@ -116,10 +147,14 @@ table {
             align-content: center;
             justify-content: center;
             align-items: center;
+
+            @media @mobile {
+                width: 99%;
+                display: flex;
+            }
         }
 
         h2 {
-            border: 1px solid purple;
             font-size: 40px;
             padding: 5px;
             margin: 5px;
@@ -127,7 +162,6 @@ table {
         }
 
         p {
-            border: 1px solid red;
             font-size: 1.2em;
             padding: 5px;
             margin: 5px;
@@ -136,9 +170,14 @@ table {
     .team {
         display: flex;
         flex-direction: column;
-        border: 1px solid orange;
         padding: 5px;
         margin: 5px;
+
+        @media @mobile {
+            width: 96%;
+            display: flex;
+            flex-direction: column;
+        }
         
         h2 {
             font-size: 30px;
@@ -149,14 +188,25 @@ table {
         .members {
             display: flex;
             flex-direction: column;
-            border: 1px solid yellow;
+
+            @media @mobile {
+                width: 99%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
 
             .ui-developers {
                 display: flex;
                 flex-direction: row;
                 padding: 5px;
                 margin: 5px;
-                border: 1px solid black;
+
+                @media @mobile {
+                    width: 97%;
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 h3 {
                     display: flex;
@@ -171,19 +221,33 @@ table {
                 .person {
                     display: flex;
                     flex-direction: column;
-                    border: 1px solid white;
+                    border: 1px solid black;
+                    border-radius: 20px;
                     padding: 5px;
                     margin: 5px;
                     width: 30%;
 
+                    @media @mobile {
+                        width: 97%;
+                        display: flex;
+                        justify-content: center;
+                        align-content: center;
+                    }
+
                     .person-img {
                         display: flex;
                         flex-direction: row;
-                        // height: 100px;
                         width: 100%;
                         justify-content: center;
                         align-content: center;
                         align-items: center;
+                        align-items: center;
+
+                        @media @mobile {
+                            width: 98%;
+                            margin-left: 5px;
+                        }
+
                     }
 
                     h4 {
@@ -200,7 +264,6 @@ table {
                         flex-direction: row;
                         padding: 5px;
                         margin: 5px;
-                        border: 1px solid aqua;
                     }
                 }
             }
@@ -209,7 +272,12 @@ table {
                 flex-direction: row;
                 padding: 5px;
                 margin: 5px;
-                border: 1px solid black;
+
+                @media @mobile {
+                    width: 97%;
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 h3 {
                     display: flex;
@@ -224,19 +292,32 @@ table {
                 .person {
                     display: flex;
                     flex-direction: column;
-                    border: 1px solid white;
+                    border: 1px solid black;
+                    border-radius: 20px;
                     padding: 5px;
                     margin: 5px;
                     width: 25%;
 
+                    @media @mobile {
+                        width: 97%;
+                        display: flex;
+                        flex-direction: column;
+                        flex-wrap: nowrap;
+                    }
+
                     .person-img {
                         display: flex;
                         flex-direction: row;
-                        // height: 100px;
                         width: 100%;
                         justify-content: center;
                         align-content: center;
                         align-items: center;
+
+                        @media @mobile {
+                            width: 98%;
+                            margin-left: 5px;
+                        }
+
                     }
 
                     h4 {
@@ -253,7 +334,6 @@ table {
                         flex-direction: row;
                         padding: 5px;
                         margin: 5px;
-                        border: 1px solid aqua;
                     }
                 }
             }
@@ -264,6 +344,13 @@ table {
                 padding: 5px;
                 margin: 5px;
                 border: 1px solid black;
+                border-radius: 20px;
+
+                @media @mobile {
+                    width: 98%;
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 h3 {
                     display: flex;
@@ -273,24 +360,37 @@ table {
                     margin: 5px;
                     font-size: 25px;
                     .header-font();
+
+                    @media @mobile {
+                        width: 50%;
+                        margin-left: 110px;
+                    }
+
                 }
 
                 .leader {
                     display: flex;
                     flex-direction: column;
-                    border: 1px solid white;
                     padding: 5px;
                     margin: 5px;
                     width: 75%;
 
+                    @media @mobile {
+                        width: 98%;
+                    }
+
                     .person-img {
                         display: flex;
                         flex-direction: row;
-                        // height: 100px;
                         width: 100%;
                         justify-content: center;
                         align-content: center;
                         align-items: center;
+
+                        @media @mobile {
+                            width: 98%;
+                        }
+
                     }
 
                     h4 {
@@ -307,7 +407,6 @@ table {
                         flex-direction: row;
                         padding: 5px;
                         margin: 5px;
-                        border: 1px solid aqua;
                     }
                 }
             }
@@ -318,29 +417,28 @@ table {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        // align-items: center;
         background: white;
-        border: 1px solid blue;
         width: 100%;
         align-content: stretch;
 
+        @media @mobile {
+            width: 100%;
+        }
+
         nav {
-            display: flex;
-            flex-direction: row;
-            border: 1px solid green;
-            align-items: stretch;
-            padding: 5px;
-            margin: 5px;
+            .display-flex(space-evenly, center);
+            margin: 0 35%;
+            padding-bottom: 1%;
 
             a {
-                display: flex;
-                flex-direction: row;
                 text-decoration: none;
-                color: orange;
+                color: rgb(226, 132, 9);
+                font-size: 1.6rem;
                 border: 1px solid black;
-                align-content: space-between;
-                padding: 5px;
-                margin: 5px;
+                border-radius: 10px;
+                box-shadow: 5px 10px rgb(226, 132, 9);
+                padding: 1%;
+                margin: 3%;
             }
         } 
     }

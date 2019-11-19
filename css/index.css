@@ -172,7 +172,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Yeon Sung', cursive;
   color: black;
 }
 h1,
@@ -180,7 +180,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Mogra', cursive;
   color: black;
 }
 h2 {
@@ -267,6 +267,9 @@ p {
 .home .intro_content {
   padding-bottom: 2%;
   border-bottom: 2px dotted black;
+}
+.home .intro_content h2 {
+  padding-bottom: 1%;
 }
 .home .content-section {
   margin: 30px 0;
@@ -362,12 +365,18 @@ p {
 }
 .home .joke-content .joke #line1 {
   display: none;
+  font-size: 1.6rem;
+  padding-top: 5%;
 }
 .home .joke-content .joke #line2 {
   display: none;
+  font-size: 1.6rem;
+  padding-top: 5%;
 }
 .home .joke-content .joke #line3 {
   display: none;
+  font-size: 1.6rem;
+  padding-top: 5%;
 }
 @media (max-width: 500px) {
   .home .joke-content .joke {

@@ -44,16 +44,16 @@ table {
 }
 
 // Cusstom code //
-@import url('https://fonts.googleapis.com/css?family=Magra|Yeon+Sung&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mogra|Yeon+Sung&display=swap');
 
 @mobile: ~"(max-width: 500px)";
 
 .header-font {
-    font-family: 'Yeon Sung', cursive;
+    font-family: 'Mogra', cursive;
 }
 
 .p-font {
-    font-family: 'Magra', sans-serif;
+    font-family: 'Yeon Sung', cursive;
 }
 
 .display-flex(@justify, @align){
@@ -67,26 +67,26 @@ table {
     height: 100%;
     display: flex;
     flex-direction: column;
-    background: darkgray;
+    background: #77BFBB;
     max-width: 1000px;
     margin: 0 auto;
     .p-font();
+    color: #0E0E40;
 
     @media @mobile {
         width: 99%;
         margin: 0 auto;
         display: flex;
-        background: darkgray;
+        background: #77BFBB;
     }
 
     .header-img {
         display: flex;
         height: 300px;
         width: 100%;
-        border: 2px solid orange;
 
         @media @mobile {
-            width: 99%;
+            width: 100%;
             height: 200px;
             display: flex;
             flex-direction: column;
@@ -98,7 +98,7 @@ table {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
+        // align-items: stretch;
         background: white;
         width: 100%;
 
@@ -111,18 +111,18 @@ table {
 
         .nav-bar {
             .display-flex(space-evenly, center);
-            margin: 0 35%;
+            margin: 0 45%;
             padding-bottom: 1%;
 
             .nav-item {
                 text-decoration: none;
-                color: rgb(226, 132, 9);
-                font-size: 1.6rem;
-                border: 1px solid black;
-                border-radius: 10px;
-                box-shadow: 5px 10px rgb(226, 132, 9);
-                padding: 1%;
-                margin: 3%;
+                color: #A64000;
+                font-size: 1.1rem;
+                border: 1px solid #A64000;
+                border-radius: 12px;
+                box-shadow: 5px 10px #A64000;
+                padding: 2%;
+                margin: 10%;
             }
         }
     }
@@ -134,7 +134,7 @@ table {
         padding: 5px;
         margin: 5px;
         text-align: center;
-        background: orange;
+        background: #A64000;
 
         @media @mobile {
             width: 96%;
@@ -159,6 +159,11 @@ table {
             padding: 5px;
             margin: 5px;
             .header-font();
+            text-decoration: underline;
+
+            @media @mobile {
+                margin-top: 20px;
+            }
         }
 
         p {
@@ -180,9 +185,10 @@ table {
         }
         
         h2 {
-            font-size: 30px;
+            font-size: 40px;
             text-align: center;
             .header-font();
+            text-decoration: underline;
         }
 
         .members {
@@ -214,14 +220,15 @@ table {
                     text-align: center;
                     padding: 5px;
                     margin: 5px;
-                    font-size: 25px;
+                    font-size: 30px;
+                    // text-decoration: underline;
                     .header-font();
                 }
 
                 .person {
                     display: flex;
                     flex-direction: column;
-                    border: 1px solid black;
+                    border: 1px solid #0E0E40;
                     border-radius: 20px;
                     padding: 5px;
                     margin: 5px;
@@ -257,6 +264,10 @@ table {
                         margin: 5px;
                         font-size: 20px;
                         .header-font();
+                        
+                        a {
+                            color: #0E0E40;
+                        }
                     }
 
                     p {
@@ -285,14 +296,15 @@ table {
                     text-align: center;
                     padding: 5px;
                     margin: 5px;
-                    font-size: 25px;
+                    font-size: 30px;
+                    // text-decoration: underline;
                     .header-font();
                 }
 
                 .person {
                     display: flex;
                     flex-direction: column;
-                    border: 1px solid black;
+                    border: 1px solid #0E0E40;
                     border-radius: 20px;
                     padding: 5px;
                     margin: 5px;
@@ -327,6 +339,10 @@ table {
                         margin: 5px;
                         font-size: 20px;
                         .header-font();
+                        
+                        a {
+                            color: #0E0E40;
+                        }
                     }
 
                     p {
@@ -343,8 +359,8 @@ table {
                 flex-direction: row;
                 padding: 5px;
                 margin: 5px;
-                border: 1px solid black;
-                border-radius: 20px;
+                // border: 1px solid black;
+                // border-radius: 20px;
 
                 @media @mobile {
                     width: 98%;
@@ -358,7 +374,8 @@ table {
                     text-align: center;
                     padding: 5px;
                     margin: 5px;
-                    font-size: 25px;
+                    font-size: 30px;
+                    // text-decoration: underline;
                     .header-font();
 
                     @media @mobile {
@@ -374,6 +391,8 @@ table {
                     padding: 5px;
                     margin: 5px;
                     width: 75%;
+                    border: 1px solid #0E0E40;
+                    border-radius: 20px;
 
                     @media @mobile {
                         width: 98%;
@@ -400,6 +419,10 @@ table {
                         margin: 5px;
                         font-size: 20px;
                         .header-font();
+                        
+                        a {
+                            color: #0E0E40;
+                        }
                     }
 
                     p {
@@ -432,13 +455,13 @@ table {
 
             a {
                 text-decoration: none;
-                color: rgb(226, 132, 9);
-                font-size: 1.6rem;
-                border: 1px solid black;
+                color: #A64000;
+                font-size: 1.1rem;
+                border: 1px solid #A64000;
                 border-radius: 10px;
-                box-shadow: 5px 10px rgb(226, 132, 9);
-                padding: 1%;
-                margin: 3%;
+                box-shadow: 5px 10px #A64000;
+                padding: 2%;
+                margin: 10%;
             }
         } 
     }

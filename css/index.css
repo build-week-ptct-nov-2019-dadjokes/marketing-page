@@ -270,7 +270,7 @@ p {
 }
 @media (max-width: 800px) {
   .home {
-    margin-top: 24%;
+    margin-top: 30%;
   }
 }
 @media (max-width: 500px) {
@@ -362,15 +362,21 @@ p {
   padding-left: 1%;
   padding-right: 0;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .home .inverse-content .text-content {
-    width: 90%;
+    height: 60%;
   }
 }
 .home .inverse-content .img-content {
   padding-left: 0;
   box-shadow: 5px 10px #A64000;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 90%;
+    height: 0%;
+  }
 }
 @media (max-width: 500px) {
   .home .inverse-content .img-content {

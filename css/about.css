@@ -162,7 +162,8 @@ table {
 }
 .container .header-img {
   display: flex;
-  height: 300px;
+  justify-content: center;
+  height: 275px;
   width: 100%;
 }
 @media (max-width: 500px) {
@@ -204,7 +205,7 @@ table {
   border-radius: 12px;
   box-shadow: 5px 10px #A64000;
   padding: 2%;
-  margin: 7%;
+  margin: 4%;
 }
 .container .about {
   display: flex;
@@ -352,6 +353,7 @@ table {
   flex-direction: row;
   padding: 5px;
   margin: 5px;
+  font-size: 1.2rem;
 }
 .container .team .members .react-developers {
   display: flex;
@@ -422,6 +424,7 @@ table {
   flex-direction: row;
   padding: 5px;
   margin: 5px;
+  font-size: 1.1rem;
 }
 .container .team .members .PL {
   display: flex;
@@ -494,6 +497,7 @@ table {
   flex-direction: row;
   padding: 5px;
   margin: 5px;
+  font-size: 1.1rem;
 }
 .container footer {
   display: flex;
@@ -523,5 +527,5 @@ table {
   border-radius: 10px;
   box-shadow: 5px 10px #A64000;
   padding: 2%;
-  margin: 7%;
+  margin: 4%;
 }
